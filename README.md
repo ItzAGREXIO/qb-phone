@@ -3,6 +3,7 @@
  
  - This version have some color changes and font changes
  - All phone app icons are moved to the top
+ - This phone is now moves on the original fork old rep is now private. 
 <!--  - This phone also have the camera looping fixed when the webhook is setup. (now it will automatically close the app when you will try to click a photo. Thanks to this [commit](https://github.com/qbcore-framework/qb-phone/pull/264/commits).) 
  -->
 
