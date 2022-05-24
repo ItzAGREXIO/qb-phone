@@ -8,7 +8,7 @@ QB.Phone.ContactColors = {
     0: "#9b59b6",
     1: "#3498db",
     2: "#e67e22",
-    3: "#e74c3c",
+    3: "#0078e9",
     4: "#1abc9c",
     5: "#9c88ff",
 }
@@ -69,6 +69,18 @@ QB.Phone.Functions.SetupApplications = function(data) {
             var icon = '<i class="ApplicationIcon '+app.icon+'" style="'+app.style+'"></i>';
             if (app.app == "meos") {
                 icon = '<img src="./img/politie.png" class="police-icon">';
+            }else if (app.app == "calculator"){
+                icon = '<img src="./img/apps/calculator.png" class="calc-icon">';
+            }
+            // else if (app.app == "phone"){
+            //     icon = '<img src="./img/apps/phone.png" style="height:40px; width:40px; margin-top:12%; margin-left: 1.5%; transform: rotate(180deg)" class="calc-icon">';
+            // }
+            else if (app.app == "garage"){
+                icon = '<img src="./img/apps/garage_img.png" style="margin-top:17%;"class="garage-icon">';
+            }else if (app.app == "camera"){
+                icon = '<img src="./img/apps/camera.png" style="height:35px; width:35px; margin-top:13%; class="calc-icon">';
+            }else if (app.app == "gallery"){
+                icon = '<img src="./img/apps/gallery.png" style="height:40px; width:40px; margin-top:11%; margin-left: 1.9% class="calc-icon">';
             }
             $(applicationSlot).html(icon+'<div class="app-unread-alerts">0</div>');
             $(applicationSlot).prop('title', app.tooltipText);
@@ -400,8 +412,8 @@ QB.Phone.Notifications.Add = function(icon, title, text, color, timeout) {
                     $(".notification-icon").css({"color":color});
                     $(".notification-title").css({"color":color});
                 } else if (color == "default" || color == null || color == undefined) {
-                    $(".notification-icon").css({"color":"#e74c3c"});
-                    $(".notification-title").css({"color":"#e74c3c"});
+                    $(".notification-icon").css({"color":"#0078e9"});
+                    $(".notification-title").css({"color":"#0078e9"});
                 }
                 if (!QB.Phone.Data.IsOpen) {
                     QB.Phone.Animations.BottomSlideUp('.container', 300, -52);
@@ -429,8 +441,8 @@ QB.Phone.Notifications.Add = function(icon, title, text, color, timeout) {
                     $(".notification-icon").css({"color":color});
                     $(".notification-title").css({"color":color});
                 } else {
-                    $(".notification-icon").css({"color":"#e74c3c"});
-                    $(".notification-title").css({"color":"#e74c3c"});
+                    $(".notification-icon").css({"color":"#0078e9"});
+                    $(".notification-title").css({"color":"#0078e9"});
                 }
                 if (!QB.Phone.Data.IsOpen) {
                     QB.Phone.Animations.BottomSlideUp('.container', 300, -52);
@@ -478,7 +490,7 @@ QB.Phone.Functions.UpdateTime = function(data) {
     }
     var MessageTime = Hourssssss + ":" + Minutessss
 
-    $("#phone-time").html("<span>" + data.InGameTime.hour + ":" + data.InGameTime.minute + "</span>");
+    $("#phone-time").html("<span>" + "Time - " + data.InGameTime.hour + ":" + data.InGameTime.minute + "</span>");
 }
 
 var NotificationTimeout = null;

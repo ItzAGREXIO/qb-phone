@@ -22,7 +22,7 @@ Config.PhoneApplications = {
     ["whatsapp"] = {
         app = "whatsapp",
         color = "#25d366",
-        icon = "fas fa-comment",
+        icon = "fab fa-whatsapp",
         tooltipText = "Whatsapp",
         tooltipPos = "top",
         style = "font-size: 2.8vh";
@@ -56,7 +56,8 @@ Config.PhoneApplications = {
     },
     ["garage"] = {
         app = "garage",
-        color = "#575fcf",
+        -- color = "linear-gradient(90deg, rgba(189,0,92,1) 0%, rgba(130,2,161,1) 100%, rgba(209,76,184,1) 100%)",
+        color = "rgba(189,0,92,1)",
         icon = "fas fa-car",
         tooltipText = "Vehicles",
         job = false,
@@ -86,7 +87,8 @@ Config.PhoneApplications = {
     },
     ["bank"] = {
         app = "bank",
-        color = "#9c88ff",
+        color = "#7b61ff",
+        -- color = "#9c88ff",
         icon = "fas fa-money-check-alt",
         tooltipText = "Bank",
         job = false,
@@ -116,7 +118,7 @@ Config.PhoneApplications = {
     },
     ["houses"] = {
         app = "houses",
-        color = "#27ae60",
+        color = "#1b8f4c",
         icon = "fas fa-home",
         tooltipText = "Houses",
         job = false,
@@ -131,12 +133,13 @@ Config.PhoneApplications = {
         tooltipText = "MDT",
         job = "police",
         blockedjobs = {},
-        slot = 13,
+        slot = 16,
         Alerts = 0,
     },
     ["lawyers"] = {
         app = "lawyers",
-        color = "#26d4ce",
+        -- color = "#26d4ce",
+        color = "#199e9a",
         icon = "fas fa-briefcase",
         tooltipText = "Services",
         tooltipPos = "bottom",
@@ -147,26 +150,51 @@ Config.PhoneApplications = {
     },
     ["gallery"] = {
         app = "gallery",
-        color = "#AC1D2C",
+        color = "WHITE",
         icon = "fas fa-images",
         tooltipText = "Gallery",
         tooltipPos = "bottom",
         job = false,
         blockedjobs = {},
-        slot = 16,
+        slot = 14,
         Alerts = 0,
     },
     ["camera"] = {
         app = "camera",
-        color = "#AC1D2C",
+        color = "WHITE",
         icon = "fas fa-camera",
         tooltipText = "Camera",
         tooltipPos = "bottom",
         job = false,
         blockedjobs = {},
+        slot = 13,
+        Alerts = 0,
+    }, 
+    ["calculator"] = {
+        app = "calculator",
+        color = "#c94001",
+        color2 = "#9c3100",
+        icon = "fas fa-calculator",
+        tooltipText = "Calculator",
+        tooltipPos = "bottom",
+        style = "font-size: 2.5vh";
+        job = false,
+        blockedjobs = {},
         slot = 15,
         Alerts = 0,
     },
+    --   ["store"] = {
+    --     app = "store",
+    --     color = "#0088D6",
+    --     icon = "fas fa-cart-arrow-down",
+    --     tooltipText = "App Store",
+    --     tooltipPos = "right",
+    --     style = "padding-right: .3vh; font-size: 2.2vh";
+    --     job = false,
+    --     blockedjobs = {},
+    --     slot = 16,
+    --     Alerts = 0,
+    -- },
 }
 Config.MaxSlots = 20
 

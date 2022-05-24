@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/trucker.css">
     <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/camera.css">
+    <link rel="stylesheet" href="./css/calculator.css">
 
     <!-- CDN's -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!-- JQuery -->
@@ -45,11 +46,12 @@
             </div>
         </div>
         <div class="container disableSelection">
-            <img src="./img/samsung-s10.png" class="phone-frame">
+            <!-- <img src="./img/samsung-s10og.png" class="phone-frame"> -->
+            <img src="./img/samsung-s10-npstyle.png" class="phone-frame">
             <div class="phone-container phone-background">
                 <!-- Phone Header -->
                 <div class="phone-header">
-                    <div id="phone-server">QBCore</div>
+                    <div id="phone-server" style="margin-left: 4%;">QBCore</div>
                     <div id="player-id">1</div>
                     <div id="phone-time">08:05</div>
                     <div id="phone-icons">
@@ -835,7 +837,7 @@
                         <div class="download-password-container">
                             <div class="download-password">
                                 <span id="download-password-title">Security</span>
-                                <span id="download-password-disclaimer">To download this application you must enter a password.</span>
+                                <span id="download-password-disclaimer" style="margin-left: 6%;">To download this application you must enter a password.</span>
                                 <input type="text" class="download-password-input" spellcheck="false" required>
 
                                 <div class="download-password-buttons">
@@ -1084,6 +1086,37 @@
                             </div>
                         </div>
                     </div>
+                    <div class="calculator-app">
+                        <div class="calculator-header">
+                            <p>Calculator</p>
+                        </div>
+
+                        <div class="calculator-list">
+                            <form name="calc" class="calc">
+                                <input id="monitorcalc" type="text" value="" disabled name="display">
+                                <input id="shakhescalc" type="button" value="AC" onclick="ac()">
+                                <input id="shakhescalc" type="button" value="C" onclick="c()">
+                                <input id="shakhescalc" type="button" value="%" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="-" onclick="data(this.value)">
+                                <input id="" type="button" value="1" onclick="data(this.value)">
+                                <input id="" type="button" value="2" onclick="data(this.value)">
+                                <input id="" type="button" value="3" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="*" onclick="data(this.value)">
+                                <input id="" type="button" value="4" onclick="data(this.value)">
+                                <input id="" type="button" value="5" onclick="data(this.value)">
+                                <input id="" type="button" value="6" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="/" onclick="data(this.value)">
+                                <input id="" type="button" value="7" onclick="data(this.value)">
+                                <input id="" type="button" value="8" onclick="data(this.value)">
+                                <input id="" type="button" value="9" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="+" onclick="data(this.value)">
+                                <input id="" type="button" value="." onclick="data(this.value)">
+                                <input id="" type="button" value="0" onclick="data(this.value)">
+                                <input id="" type="button" value="=" onclick="equal()">
+                                <div style="clear: both;"></div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="phone-currentcall-container">
@@ -1132,6 +1165,7 @@
         <script src="./js/trucker.js"></script>
         <script src="./js/gallery.js"></script>
         <script src="./js/camera.js"></script>
+        <script src="./js/calculator.js"></script>
         <script type="text/javascript">$('#whatsapp-openedchat-message').emojioneArea({inline: true, searchPosition: "bottom", shortnames: true})</script>
         <!-- <script type="text/javascript">$('#tweet-new-message').emojioneArea({pickerPostion: 'bottom' ,inline: true, shortnames: true})</script> -->
     </body>
