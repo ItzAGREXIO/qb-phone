@@ -311,12 +311,14 @@ body {
     position: absolute;
     width: 100%;
     bottom: 52vh;
+    margin-left: -0.3vh;
 }
 
 .phone-home-applications {
     position: absolute;
     width: 100%;
     bottom: 27vh;
+    margin-left: -0.3vh;
 }
 
 .phone-application > i {
