@@ -19,6 +19,8 @@
 
 ## To Do
 - [ ] Update README.md
+
+<i><b>Sorry I am so busy that's why I forgot to update the readme just need to change some preview photos. If anyone wanna add the latest image then feel free to to go for Pull Requests<b/><i/>
 <br/>
 <hr/>
 
